@@ -1,0 +1,25 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name    = "gsout"
+version = "1.0.0"
+readme  = "README.md"
+authors = [
+  { name="Henry Le Berre", email="henryleberre@gmail.com" },
+]
+description = "CLI tool that exports gradescope student data."
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "setuptools",
+    "beautifulsoup4",
+]
+
+[project.urls]
+Source = "https://github.com/pyrometheus/gsout"
+Issues = "https://github.com/pyrometheus/gsout/issues"
+
+[project.scripts]
+gsout  = "gsout:main"
